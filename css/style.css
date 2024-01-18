@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.p-20 {
+  padding: 20px;
+}
+.p-10 {
+  padding: 10px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/******************헤더*****************/
+
+header {
+  background-image: url("../images/background.jpg");
+  height: 800px;
+  background-size: 100% 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 30px;
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.search-box {
+  display: inline-block;
+  /* 옆 친구인 nav 기준으로 위치를 조정할 수 있다. */
+  position: relative;
+  top: 20px;
+  left: 50px;
+  background-color: white;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.box-title {
+  font-size: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  font-size: 11px;
+}
+
+table input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #c0bfbf;
+  border-radius: 2px;
+  font-size: 11px;
+  color: #c0bfbf;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+select {
+  width: 100%;
+  height: 30px;
+  /* appearance: none; */
+  border: 1px solid #c0bfbf;
+  border-radius: 2px;
+  color: #c0bfbf;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("../images/down.png") no-repeat 97% 50%/12px auto;
+}
+
+.search {
+  display: flex;
+  justify-content: end;
+}
+.btn-search {
+  background-color: #ff5a5f;
+  border: none;
+  color: white;
+  font-size: 12px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/******************바디*****************/
+
+section {
+  padding: 0 80px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+section .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/******************에어비앤비 둘러보기*****************/
+.sec1 .card-box {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin-bottom: 30px;
+}
+.sec1 .card-box .card {
+  border: 1px solid #c0bfbf;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.sec1 .card-box .card .card-img {
+  width: 50px;
+  height: 50px;
+}
+
+.sec1 .card-box .card .card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.sec1 .ad-img {
+}
+
+.sec1 .ad-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/******************추천 여행지*****************/
+
+.sec2 .img-box {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+}
+.sec2 .img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+/******************에어비앤비 플러스를 만나보세요!*****************/
+
+.sec3 .title {
+  margin-bottom: 0px;
+}
+.sec3 .sub-title {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.sec3 .ad-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/******************전 세계 숙소*****************/
+.sec4 .home-box .home {
+  line-height: 19px;
+}
+.sec4 .home-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.sec4 .home-box .home .home-img {
+  width: 100%;
+}
+
+.sec4 .home-box .home .home-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.sec4 .home-box .home .text1 {
+  font-size: 12px;
+  color: #c0bfbf;
+}
+.sec4 .home-box .home .text2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.sec4 .home-box .home .grade-box {
+  font-size: 9px;
+  display: flex;
+  gap: 4px;
+}
+.sec4 .home-box .home .grade-box .star {
+  color: #197574;
+}
